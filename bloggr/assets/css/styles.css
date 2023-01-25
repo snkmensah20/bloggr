@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&family=Unbounded&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: #042066;
+}
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo {
+    font-family: "Moon Dance", cursive;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header .logo .logoo {
+    padding-right: 6px;
+    padding-top: 13px;
+    max-height: 35px;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#header ul li {
+    list-style: none;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: black;
+}
+
+#container_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+#container_search .search_bar {
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 50px;
+    width: 330px;
+    height: 50px;
+    background: white;
+}
+
+.form-control {
+    font-style: italic;
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    width: 290px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+#container_search button {
+    border-radius: 50px;
+    border: none;
+    background: white;
+}
+
+#aside_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+}
+
+#aside_content .latest_post {
+    display: block;
+    font-size: 30px;
+    font-family: 'Unbounded', cursive;
+    position: relative;
+    bottom: 150px;
+    left: 415px;
+}
+
+#aside_content .list_latest {
+    list-style-type: none;
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+    border-style: solid;
+    position: relative;
+    bottom: 95px;
+}
+
+.searched-container {
+    background: #fff;
+    width: 100%;
+}
+
+h1 .post_contain {
+    position: relative;
+    display: block;
+    padding: 100px;
+
+}

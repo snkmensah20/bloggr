@@ -1,0 +1,33 @@
+{% load blog_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/jpg"
+          href="{% static "images/icons8-geometric-flowers-50.png" %}">
+    <link href="{% static "css/styles.css" %}" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
+</head>
+<body class="background-animate">
+    <div id="container">
+    <header id="header">
+        <a href="{% url "blog:home_index" %}" class="logo"><img
+                src="{% static "images/icons8-geometric-flowers-50.png" %}"
+                                      class="logoo" alt="bloggr logo">Bloggr</a>
+        <ul class="navigation">
+            <li><a href="{% url "blog:home_index" %}" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="{% url "blog:post_list" %}">Writings</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
